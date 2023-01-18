@@ -24,6 +24,8 @@ body{
     font-family: Georgia, Garamond, 'Times New Roman', Times, serif;
     width: 991pt;
     height: 1696pt;
+    background-image: url("https://nguyendangtu.github.io/recipeImages/silverware.jpg");
+    background-repeat: repeat;
 }
 
 a{
