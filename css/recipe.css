@@ -1,0 +1,66 @@
+div.heading{
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+div.heading > div.main{
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+div.heading > div.page{
+    text-align: left;
+    font-size: 18pt;
+    font-weight: normal;
+}
+
+body{
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, 'Times New Roman', Times, serif;
+    width: 991pt;
+    height: 1696pt;
+}
+
+a{
+    color: #A4A400;
+}
+
+#content::before{
+    content:"\a";
+    white-space: pre;
+}
+
+abbr{
+    text-decoration: underline;
+}
+
+.delete{
+    text-decoration: line-through;
+}
+
+.comments{
+    margin-left: 20px;
+    font-style: italic;
+    background-color:cornsilk;
+    display: block;
+}
+
+.copyright{
+    font-family: monospace;
+    text-align: left;
+    float: right;
+}
+
+.validHtmlCSS{
+    text-align: right;
+}
+
+
+
+
+
