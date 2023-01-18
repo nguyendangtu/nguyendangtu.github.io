@@ -26,6 +26,7 @@ body{
     height: 1696pt;
     background-image: url("https://nguyendangtu.github.io/recipeImages/silverware.jpg");
     background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 a{
