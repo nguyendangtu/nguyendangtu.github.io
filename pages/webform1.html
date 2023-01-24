@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Webform1</title>
+        <link href="../css/webform1.css" rel="stylesheet" />
+        <script src="../scripts/functionalProgramming.js"> </script>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <form id="myform" method="get" action="http://www.google.com/search">
+                <lable>Email Address<input type="text" id="email" name="email" placeholder="Enter Email">
+                </lable>
+                <lable>We will never share your email with anyone else.</label>
+                <br/>
+                <br/>
+                <br/>
+                <lable>Password<input type="password" id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Password field is at least 10 characters in length and contain at least one number and one uppercase and lowercase letter">
+                </lable>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Check me out
+                </label>
+                <br/>
+                <br/>
+                <br/>
+                <lable>URL<input type="url" id="url" name="url" placeholder="Enter url" pattern="http(s|)://.*" title="Beginning with either the string, http:// or https://">
+                </lable>
+                <br/>
+                <br/>
+                <br/>
+                <input type="submit" class="submit"></input>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,4 +1,9 @@
 
+            window.onload = pageload;
+            function pageload(){
+                document.getElementById('myform').onsubmit = validateForm;
+            }
+
             /* runs test to see if expected argument is === to value returned by function2test argument */
             function myFunctionTest(expected, found){
                 if(expected === found){
@@ -100,3 +105,14 @@
 
             console.log("Expected output of filterLongWords([John, David, Tom], 4) is 'David'  " + myFunctionTest("David",filterLongWords(["John", "David", "Tom"],4)[0]));
             console.log("Expected output of filterLongWords([John, David, Tom], 5) is 'undefined'  " + myFunctionTest(undefined,filterLongWords(["John", "David", "Tom"],5)[0]));
+
+
+            function validateForm(){
+               /*  const pattern = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}/g;
+                let password = document.getElementById('password').value;
+                if(!pattern.test(password)){
+                    alert("incorrect passsword. Password field is at least 10 characters in length and contain at least one number and one uppercase and lowercase letter");
+                    return false;
+                } */
+
+            }
