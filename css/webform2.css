@@ -103,8 +103,26 @@ input[type=text],input[type=date], select{
 }
 #action input[type=submit]{
     padding: 12px 20px;
-    border: red;
+    box-sizing: border-box;
     border-radius: 4px;
     cursor: pointer;
     text-align: right;
+}
+
+#resetBtn{
+    color: blue;
+    border: 1px solid blue;
+    border-color: blue;
+}
+
+#cancelBtn{
+    color: red;
+    border: 1px solid red;
+    border-color: red;
+}
+
+#addProductBtn{
+    color: green;
+    border: 1px solid green;
+    border-color: green;
 }
