@@ -18,7 +18,7 @@
             <div id="myform">
                 <div id="content">
                     <div class="row">
-                        <div class="column" style="background-color:#aaa;">
+                        <div class="column">
                           <h2>New Product Form</h2>
                           <br><br>
                           <lable>Product Number<input type="text" id="productNumber" name="productNumber">
@@ -30,7 +30,7 @@
                           <lable>Unit Price<input type="text" id="unitPrice" name="unitPrice" placeholder="0.0">
                           </lable>
                         </div>
-                        <div class="column" style="background-color:#bbb;">
+                        <div class="column">
                           <h2></h2>
                           <br><br>
                           <br><br><br>
@@ -41,14 +41,21 @@
                    
                           <lable>Supplier
                             <select id="supplier" name="supplier">
-                                <option value=">select supplier">select supplier</option>
+                                <option value=">Select Supplier">Select Supplier</option>
                                 <option value="Walmart">Walmart</option>
                                 <option value="Hyvee">Hyvee</option>
                               </select>
                           </lable>
                           <br><br>
-                          <lable>Date Supplied<input type="text" id="unitPrice" name="unitPrice" placeholder="0.0">
+                          <lable>Date Supplied<input type="date" id="dateSupplied" name="dateSupplied" value="YYYY-MM-DD" placeholder="yyyy-mm-dd">
                           </lable>
+                          <span>enter valide date</span>
+                          <br><br><br><br>
+                          <div id="action">
+                            <input type="submit" id="addProductBtn" class="submit" value="Add Product"></input>
+                            <input type="submit" class="cancelBtn" value="Cancel"></input>
+                            <input type="submit" class="reset" value="Reset"></input>
+                          </div>
                         </div>
                       </div>
                 </div>
