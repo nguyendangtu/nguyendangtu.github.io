@@ -60,15 +60,11 @@
             console.log("Expected output of sum(null) is null  " + myFunctionTest(null, sum(null)));
             
             function multiply(a){
-                let result = 1;
                 if(Array.isArray(a)){
-                    for(let i=0;i<a.length;i++){
-                        result *= a[i];
-                    }
+                    return a.reduce((i,m) => i * m, 1);
                 }else{
                     return null;
                 }
-                return result;
             }
 
             console.log("Expected output of multiply([1,2,3,4]) is 24  " + myFunctionTest(24, multiply([1,2,3,4])));
@@ -79,11 +75,9 @@
                     return null;
                 }
 
-                let result = "";
-                for(let i=0;i<a.length;i++){
-                    result += a[a.length - 1 - i]
-                }
-                return result;
+                let array = a.split('');
+                return array.reduce((character, reverse) => reverse + character, '');
+
             }
 
             console.log("Expected output of reverse('jag testar') is 'ratset gaj'  " + myFunctionTest("ratset gaj", reverse("jag testar")));
@@ -94,14 +88,10 @@
                 if(words == null || words.length == 0 || !Array.isArray(words)){
                     return null;
                 }
-                let max = words[0].length;
-                for(let i=0;i<words.length;i++){
-                    let l = words[i].length;
-                    if(l>max){
-                        max = l;
-                    }
-                }
-                return max;
+
+                let longestWord = words.reduce((pre,current) => pre.length > current.length ? pre : current);
+                return longestWord.length;
+              
             }
 
             console.log("Expected output of findLongestWord([John, David, Tom]) is 5  " + myFunctionTest(5, findLongestWord(["John", "David", "Tom"])));
@@ -111,14 +101,7 @@
                 if(words == null || words.length == 0 || !Array.isArray(words)){
                     return null;
                 }
-                let result = [];
-                for(let i=0;i<words.length;i++){
-                    let l = words[i].length;
-                    if(l>len){
-                        result.push(words[i]);
-                    }
-                }
-                return result;
+                return words.filter(w => w.length > len);
             }
 
             console.log("Expected output of filterLongWords([John, David, Tom], 4) is 'David'  " + myFunctionTest("David",filterLongWords(["John", "David", "Tom"],4)[0]));
