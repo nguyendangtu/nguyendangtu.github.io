@@ -34,5 +34,8 @@ class Bank{
         }
     }
 
+    endOfMonth(){
+        
+    }
     
 }
