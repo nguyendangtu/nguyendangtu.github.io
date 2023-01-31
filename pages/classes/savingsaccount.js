@@ -19,8 +19,15 @@ class SavingsAccount extends Account{
 
 
     addInterest(){
-        
+        let amount = this._balance * (this._interest/100);
+        this._balance += amount;
     }
 
+    /**
+     * @returns {string} representation of this account
+     */
+    toString() {
+        return "Account " + this._number + ": balance " + this._balance + ", interest " + this._interest;
+    }
     
 }
