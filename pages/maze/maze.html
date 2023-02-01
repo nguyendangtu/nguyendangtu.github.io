@@ -30,6 +30,8 @@
 			<div class="boundary"></div>
 			<div id="end">E</div>
 		</div>
+
+		<div id="cycle"></div>
 		
 		<p>
 			The object of this game is to guide the mouse cursor through the start area and get to the end area.  Be sure to avoid the walls:
@@ -37,8 +39,14 @@
 		
 		<div class="boundary example"></div>
 		
-		<p>
-			Good luck!
-		</p>
+		<label for="width">Width:</label>
+		<input type="text" id="width" name="width">
+
+		<label for="growthAmount">Growth Amount:</label>
+		<input type="text" id="growthAmount" name="growthAmount">
+
+		<label for="interval">Interval:</label>
+		<input type="text" id="interval" name="interval">
+		<button id="btnStart" value="btnstart"></button>
 	</body>
 </html>
