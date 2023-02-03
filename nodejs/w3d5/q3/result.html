@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Result</title>
+        <script>
+            const date = new Date();
+            const hour = date.getHours();
+            if (hour >= 6 && hour < 18) {
+                document.write('<link href="css/day.css" rel="stylesheet">');
+            } else {
+                document.write('<link href="css/night.css" rel="stylesheet">');
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <form action="/result" method="post"><label>Name <input name="name"></label> <label>Age <input
+                        name="age"></label><button type="submit">SubmitQuery</button></form>
+        </div>
+
+    </body>
+</html>
