@@ -1,0 +1,12 @@
+npm init
+npm install express -save
+npm install ejs -save
+express --views=ejs myApp
+npm i cors express nodemon
+npm install dotenv --save
+npm i express mongoose morgan dotenv multer body-parser cors nodemon --save
+npm install --save express-session
+npm install cookie-parser -save
+
+
+nodemon index.js
