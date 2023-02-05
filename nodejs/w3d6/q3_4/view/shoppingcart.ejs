@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <title>Shopping Cart</title>
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h2>All Products</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr> 
+            <% for(var i=0; i< products.length; i++) {%>
+                <tr>
+                  <td>
+                    <%= products[i].name%>
+                  </td>
+                  <td>
+                    <%= products[i].price%>
+                  </td>
+                  <td>
+                    <%= products[i].quantity%>
+                  </td>
+                </tr>
+             <% } %>
+        </table>
+    </div>
+</body>
+
+</html>
