@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <title>Add to Card</title>
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h2>All Products</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>ID</th>
+            </tr> 
+            <% for(var i=0; i< cards.length; i++) {%>
+                <tr>
+                  <td>
+                    <%= cards[i].name%>
+                  </td>
+                  <td>
+                    <%= cards[i].price%>
+                  </td>
+                  <td>
+                    <%= cards[i].description%>
+                  </td>
+                  <td>
+                    <%= cards[i].id%>
+                  </td>
+                </tr>
+             <% } %>
+        </table>
+    </div>
+</body>
+
+</html>
