@@ -24,7 +24,7 @@ app.use(
 );
 app.use((req, res, next) => {
     if (!req.session.list) {
-        req.session.list = ["Home","Products","Sale","About"];
+        req.session.list = ["Item1", "Item2", "Item3", "Item4"];
     }
     next();
 });
@@ -44,5 +44,5 @@ app.post("/add", (req, res) => {
     req.session.list.push(req.body.item);
     res.redirect(303, "/");
 });
-app.listen(3000);
+app.listen(3000, ()=>console.log("Server is running...."));
 
